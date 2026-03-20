@@ -7,6 +7,16 @@ function addTask() {
   let li = document.createElement("li");
   li.textContent = task;
 
+  // DELETE BUTTON
+  let deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "❌";
+
+  deleteBtn.onclick = function () {
+    li.remove();
+  };
+
+  li.appendChild(deleteBtn);
+
   document.getElementById("taskList").appendChild(li);
 
   input.value = "";
