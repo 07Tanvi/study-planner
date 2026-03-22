@@ -13,12 +13,14 @@ function displayTasks() {
       li.style.color = "gray";
     }
 
+    // MARK COMPLETE
     li.onclick = function () {
       tasks[index].completed = !tasks[index].completed;
       localStorage.setItem("tasks", JSON.stringify(tasks));
       displayTasks();
     };
 
+    // DELETE BUTTON
     let deleteBtn = document.createElement("button");
     deleteBtn.textContent = "❌";
 
@@ -29,7 +31,23 @@ function displayTasks() {
       displayTasks();
     };
 
+    // EDIT BUTTON
+    let editBtn = document.createElement("button");
+    editBtn.textContent = "✏️";
+
+    editBtn.onclick = function (event) {
+      event.stopPropagation();
+      let newTask = prompt("Edit your task:", task.text);
+
+      if (newTask !== null && newTask !== "") {
+        tasks[index].text = newTask;
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        displayTasks();
+      }
+    };
+
     li.appendChild(deleteBtn);
+    li.appendChild(editBtn);
     taskList.appendChild(li);
   });
 }
