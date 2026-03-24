@@ -64,5 +64,10 @@ function addTask() {
   input.value = "";
   displayTasks();
 }
+let total = tasks.length;
+let completed = tasks.filter(t => t.completed).length;
+let pending = total - completed;
 
+document.getElementById("counter").textContent =
+  `Total: ${total} | Completed: ${completed} | Pending: ${pending}`;
 displayTasks();
