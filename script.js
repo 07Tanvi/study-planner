@@ -1,10 +1,22 @@
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
+let currentFilter = "all";
 function displayTasks() {
+
   let taskList = document.getElementById("taskList");
   taskList.innerHTML = "";
 
-  tasks.forEach((task, index) => {
+  tasks
+  .filter(task => {
+    if (currentFilter === "completed") return task.completed;
+    if (currentFilter === "pending") return !task.completed;
+    return true;
+  })
+
+  .forEach((task, index) => {
+    function filterTasks(type) {
+  currentFilter = type;
+  displayTasks();
+}
     let li = document.createElement("li");
     li.textContent = task.text;
 
@@ -60,6 +72,7 @@ function addTask() {
 
   tasks.push({ text: task, completed: false });
   localStorage.setItem("tasks", JSON.stringify(tasks));
+  
 
   input.value = "";
   displayTasks();
