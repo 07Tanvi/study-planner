@@ -18,7 +18,7 @@ function displayTasks() {
   displayTasks();
 }
     let li = document.createElement("li");
-    li.textContent = task.text;
+    li.textContent = task.text + " (Due: " + (task.dueDate || "No date") + ")";
 
     if (task.completed) {
       li.style.textDecoration = "line-through";
@@ -63,14 +63,19 @@ function displayTasks() {
     taskList.appendChild(li);
   });
 }
+function filterTasks(type) {
+  currentFilter = type;
+  displayTasks();
+}
 
 function addTask() {
   let input = document.getElementById("taskInput");
   let task = input.value;
+  let date = document.getElementById("dueDate").value;
 
   if (task === "") return;
 
-  tasks.push({ text: task, completed: false });
+  
   localStorage.setItem("tasks", JSON.stringify(tasks));
   
 
