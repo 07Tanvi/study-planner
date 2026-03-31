@@ -95,3 +95,6 @@ function filterTasks(type) {
 
 displayTasks();
 li.style.backgroundColor = "#ffe6e6";
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
