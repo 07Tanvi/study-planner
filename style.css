@@ -1,7 +1,8 @@
 body {
-  font-family: Arial;
+    font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #f4f4f4;
+
 }
 
 h1 {
@@ -10,33 +11,50 @@ h1 {
 
 input {
   padding: 10px;
+  margin: 5px;
   width: 200px;
 }
 
 button {
-  padding: 10px;
+  padding: 10px 15px;
+  margin: 5px;
   background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
 }
 
-li {
-  margin-top: 10px;
-  list-style: none;
-  background: white;
-  padding: 10px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+button:hover {
+  background-color: #45a049;
 }
 button {
+  border-radius: 5px;
+}
+
+li {
+  list-style: none;
+  margin: 10px auto;
+  padding: 10px;
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+li button {
   margin-left: 5px;
 }
 .dark-mode {
   background-color: #121212;
   color: white;
 }
+
+.dark-mode li {
+  background-color: #1e1e1e;
+}
+
 
 .dark-mode input,
 .dark-mode button {
