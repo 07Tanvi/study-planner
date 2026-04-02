@@ -98,3 +98,8 @@ li.style.backgroundColor = "#ffe6e6";
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
+function clearAllTasks() {
+  tasks = [];
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+  displayTasks();
+}
