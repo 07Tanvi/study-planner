@@ -79,7 +79,10 @@ function addTask() {
   let task = input.value;
   let date = document.getElementById("dueDate").value;
 
-  if (task === "") return;
+  if (task === "") {
+  alert("Please enter a task!");
+  return;
+}
 
   tasks.push({ text: task, completed: false, dueDate: date });
   localStorage.setItem("tasks", JSON.stringify(tasks));
