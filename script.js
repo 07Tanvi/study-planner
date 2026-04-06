@@ -5,104 +5,74 @@ function displayTasks() {
   let taskList = document.getElementById("taskList");
   taskList.innerHTML = "";
 
-  tasks
-    .filter(task => {
-      if (currentFilter === "completed") return task.completed;
-      if (currentFilter === "pending") return !task.completed;
-      return true;
-    })
-    .forEach((task, index) => {
-      let li = document.createElement("li");
+  tasks.forEach((task, index) => {
+    let li = document.createElement("li");
 
-      li.innerHTML = task.text + " (Due: " + (task.dueDate || "No date") + ")";
+    li.textContent = `${task.text} (Due: ${task.date || "No date"})`;
 
-      // OVERDUE
-      if (task.dueDate) {
-        let today = new Date();
-        let due = new Date(task.dueDate);
+    let deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "❌";
+    deleteBtn.onclick = function () {
+      tasks.splice(index, 1);
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+      displayTasks();
+    };
 
-        if (due < today && !task.completed) {
-          li.style.backgroundColor = "#ffcccc";
-        }
-      }
-
-      if (task.completed) {
-        li.style.textDecoration = "line-through";
-        li.style.color = "gray";
-      }
-
-      li.onclick = function () {
-        tasks[index].completed = !tasks[index].completed;
+    let editBtn = document.createElement("button");
+    editBtn.textContent = "✏️";
+    editBtn.onclick = function () {
+      let newTask = prompt("Edit task:", task.text);
+      if (newTask) {
+        tasks[index].text = newTask;
         localStorage.setItem("tasks", JSON.stringify(tasks));
         displayTasks();
-      };
+      }
+    };
 
-      let deleteBtn = document.createElement("button");
-      deleteBtn.textContent = "❌";
+    li.appendChild(deleteBtn);
+    li.appendChild(editBtn);
+    taskList.appendChild(li);
+  });
 
-      deleteBtn.onclick = function (event) {
-        event.stopPropagation();
-        tasks.splice(index, 1);
-        localStorage.setItem("tasks", JSON.stringify(tasks));
-        displayTasks();
-      };
-
-      let editBtn = document.createElement("button");
-      editBtn.textContent = "✏️";
-
-      editBtn.onclick = function (event) {
-        event.stopPropagation();
-        let newTask = prompt("Edit your task:", task.text);
-
-        if (newTask !== null && newTask !== "") {
-          tasks[index].text = newTask;
-          localStorage.setItem("tasks", JSON.stringify(tasks));
-          displayTasks();
-        }
-      };
-
-      li.appendChild(deleteBtn);
-      li.appendChild(editBtn);
-      taskList.appendChild(li);
-    });
-
-  let total = tasks.length;
-  let completed = tasks.filter(t => t.completed).length;
-  let pending = total - completed;
-
+  // ✅ COUNTER
   document.getElementById("counter").textContent =
-    `Total: ${total} | Completed: ${completed} | Pending: ${pending}`;
+    `Total: ${tasks.length} | Completed: 0 | Pending: ${tasks.length}`;
+
+  // ✅ TITLE UPDATE (DAY 15 FEATURE)
+  document.title = `(${tasks.length}) Study Planner`;
 }
 
 function addTask() {
   let input = document.getElementById("taskInput");
-  let task = input.value;
-  let date = document.getElementById("dueDate").value;
+  let dateInput = document.getElementById("dueDate");
+
+  let task = input.value.trim();
+  let date = dateInput.value;
 
   if (task === "") {
-  alert("Please enter a task!");
-  return;
-}
+    alert("Please enter a task!");
+    return;
+  }
 
-  tasks.push({ text: task, completed: false, dueDate: date });
+  tasks.push({ text: task, date: date });
+
   localStorage.setItem("tasks", JSON.stringify(tasks));
 
   input.value = "";
+  dateInput.value = "";
+
   displayTasks();
 }
 
-function filterTasks(type) {
-  currentFilter = type;
-  displayTasks();
-}
-
-displayTasks();
-li.style.backgroundColor = "#ffe6e6";
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-}
 function clearAllTasks() {
   tasks = [];
   localStorage.setItem("tasks", JSON.stringify(tasks));
   displayTasks();
 }
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+
+// 👉 PAGE LOAD PE RUN
+displayTasks();
