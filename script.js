@@ -76,3 +76,10 @@ function toggleDarkMode() {
 
 // 👉 PAGE LOAD PE RUN
 displayTasks();
+function showTodayDate() {
+  const today = new Date();
+  const formatted = today.toDateString();
+  document.getElementById("todayDate").textContent = "📅 Today: " + formatted;
+}
+
+showTodayDate();
