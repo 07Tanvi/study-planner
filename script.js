@@ -10,17 +10,33 @@ function displayTasks() {
 
     li.textContent = `${task.text} (Due: ${task.date || "No date"})`;
 
+    // ✅ completed class apply
+    if (task.completed) {
+      li.classList.add("completed");
+    }
+
+    // ✅ click toggle complete
+    li.onclick = function () {
+      tasks[index].completed = !tasks[index].completed;
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+      displayTasks();
+    };
+
+    // ❌ delete button
     let deleteBtn = document.createElement("button");
     deleteBtn.textContent = "❌";
-    deleteBtn.onclick = function () {
+    deleteBtn.onclick = function (e) {
+      e.stopPropagation(); // important (click conflict avoid)
       tasks.splice(index, 1);
       localStorage.setItem("tasks", JSON.stringify(tasks));
       displayTasks();
     };
 
+    // ✏️ edit button
     let editBtn = document.createElement("button");
     editBtn.textContent = "✏️";
-    editBtn.onclick = function () {
+    editBtn.onclick = function (e) {
+      e.stopPropagation(); // important
       let newTask = prompt("Edit task:", task.text);
       if (newTask) {
         tasks[index].text = newTask;
@@ -36,9 +52,13 @@ function displayTasks() {
 
   // ✅ COUNTER
   document.getElementById("counter").textContent =
-    `Total: ${tasks.length} | Completed: 0 | Pending: ${tasks.length}`;
+    `Total: ${tasks.length} | Completed: ${
+      tasks.filter(t => t.completed).length
+    } | Pending: ${
+      tasks.filter(t => !t.completed).length
+    }`;
 
-  // ✅ TITLE UPDATE (DAY 15 FEATURE)
+  // ✅ TITLE UPDATE
   document.title = `(${tasks.length}) Study Planner`;
 }
 
@@ -54,7 +74,7 @@ function addTask() {
     return;
   }
 
-  tasks.push({ text: task, date: date });
+  tasks.push({ text: task, date: date, completed: false });
 
   localStorage.setItem("tasks", JSON.stringify(tasks));
 
@@ -74,12 +94,13 @@ function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
 
-// 👉 PAGE LOAD PE RUN
-displayTasks();
 function showTodayDate() {
   const today = new Date();
   const formatted = today.toDateString();
-  document.getElementById("todayDate").textContent = "📅 Today: " + formatted;
+  document.getElementById("todayDate").textContent =
+    "📅 Today: " + formatted;
 }
 
+// ✅ RUN ON LOAD
+displayTasks();
 showTodayDate();

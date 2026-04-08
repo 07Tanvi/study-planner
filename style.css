@@ -66,3 +66,7 @@ li button {
 .dark-mode li {
   background-color: #222;
 }
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
