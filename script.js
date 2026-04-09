@@ -2,6 +2,18 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let currentFilter = "all";
 
 function displayTasks() {
+  if (tasks.length === 0) {
+  taskList.innerHTML = "<p style='text-align:center; color:gray;'>No tasks yet 🚀</p>";
+  
+  // counter reset
+  document.getElementById("counter").textContent =
+    "Total: 0 | Completed: 0 | Pending: 0";
+
+  // title update
+  document.title = "(0) Study Planner";
+
+  return;
+}
   let taskList = document.getElementById("taskList");
   taskList.innerHTML = "";
 
