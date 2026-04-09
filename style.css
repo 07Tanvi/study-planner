@@ -70,3 +70,8 @@ li button {
   text-decoration: line-through;
   opacity: 0.6;
 }
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
