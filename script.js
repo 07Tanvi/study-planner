@@ -15,7 +15,7 @@ function displayTasks() {
   return;
 }
   let taskList = document.getElementById("taskList");
-  taskList.innerHTML = "";
+  taskList.innerHTML = "<p style='text-align:center;'>📭 No tasks yet 🚀</p>";
 
   tasks.forEach((task, index) => {
     let li = document.createElement("li");
