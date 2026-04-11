@@ -87,3 +87,7 @@ input:focus {
 button {
   border-radius: 8px;
 }
+#todayDate {
+  font-weight: bold;
+  color: #4CAF50;
+}
