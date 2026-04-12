@@ -83,7 +83,7 @@ task = task.charAt(0).toUpperCase() + task.slice(1);
   let date = dateInput.value;
 
   if (task === "") {
-    alert("Please enter a task!");
+    alert("⚠️ Please enter a task before adding!");
     return;
   }
 
