@@ -101,3 +101,6 @@ li:hover {
 li {
   transition: all 0.3s ease;
 }
+button {
+  margin: 5px;
+}
