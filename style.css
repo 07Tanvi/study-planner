@@ -104,3 +104,7 @@ li {
 button {
   margin: 5px;
 }
+.no-date {
+  color: red;
+  font-style: italic;
+}
