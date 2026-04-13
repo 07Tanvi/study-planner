@@ -114,3 +114,6 @@ li {
 button:last-child {
   background-color: #ff4d4d;
 }
+button:active {
+  transform: scale(0.95);
+}
