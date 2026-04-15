@@ -117,3 +117,6 @@ button:last-child {
 button:active {
   transform: scale(0.95);
 }
+li {
+  padding: 12px;
+}
