@@ -69,7 +69,7 @@ let pending = total - completed;
 let percent = total === 0 ? 0 : Math.round((completed / total) * 100);
 
 document.getElementById("counter").textContent =
-  `Total: ${total} | Completed: ${completed} | Pending: ${pending} | Progress: ${percent}%`;
+  `📊Total: ${total} | Completed: ${completed} | Pending: ${pending} | Progress: ${percent}%`;
   // ✅ TITLE UPDATE
   document.title = `(${tasks.length}) Study Planner`;
 }
