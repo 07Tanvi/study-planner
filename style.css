@@ -126,3 +126,6 @@ input {
 h1 {
   margin-bottom: 15px;
 }
+#counter {
+  font-weight: bold;
+}
