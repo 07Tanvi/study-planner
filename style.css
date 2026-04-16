@@ -129,3 +129,6 @@ h1 {
 #counter {
   font-weight: bold;
 }
+ul {
+  padding: 0;
+}
