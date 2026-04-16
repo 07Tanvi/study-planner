@@ -135,3 +135,6 @@ ul {
 li {
   border-radius: 10px;
 }
+button {
+  cursor: pointer;
+}
