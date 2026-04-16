@@ -138,3 +138,6 @@ li {
 button {
   cursor: pointer;
 }
+input {
+  margin: 8px;
+}
