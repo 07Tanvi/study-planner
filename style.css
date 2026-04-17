@@ -153,3 +153,6 @@ li {
 button {
   font-size: 14px;
 }
+input:focus {
+  transition: 0.3s;
+}
