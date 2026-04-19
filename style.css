@@ -162,3 +162,6 @@ li {
 body {
   line-height: 1.5;
 }
+li {
+  border: 1px solid #eee;
+}
