@@ -168,3 +168,9 @@ li {
 input {
   width: 80%;
 }
+body {
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+li:hover {
+  background-color: #fafafa;
+}
