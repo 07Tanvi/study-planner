@@ -174,3 +174,6 @@ body {
 li:hover {
   background-color: #fafafa;
 }
+button {
+  letter-spacing: 0.5px;
+}
