@@ -183,3 +183,6 @@ html {
 li {
   letter-spacing: 0.3px;
 }
+input {
+  font-size: 14px;
+}
