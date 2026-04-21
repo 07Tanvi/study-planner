@@ -189,3 +189,6 @@ input {
 button {
   padding: 6px 10px;
 }
+li {
+  background-color: #ffffff;
+}
