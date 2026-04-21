@@ -186,3 +186,6 @@ li {
 input {
   font-size: 14px;
 }
+button {
+  padding: 6px 10px;
+}
