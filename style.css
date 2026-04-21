@@ -180,3 +180,6 @@ button {
 html {
   scroll-behavior: smooth;
 }
+li {
+  letter-spacing: 0.3px;
+}
