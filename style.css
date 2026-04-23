@@ -202,3 +202,6 @@ ul {
   max-width: 500px;
   margin: auto;
 }
+li {
+  padding: 10px 15px;
+}
