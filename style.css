@@ -198,3 +198,7 @@ body {
 body {
   text-align: center;
 }
+ul {
+  max-width: 500px;
+  margin: auto;
+}
