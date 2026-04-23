@@ -211,3 +211,6 @@ button:hover {
 input {
   border: 1px solid #ccc;
 }
+body {
+  padding: 20px;
+}
