@@ -223,3 +223,6 @@ ul {
 input {
   width: 90%;
 }
+li:hover {
+  transform: scale(1.01);
+}
