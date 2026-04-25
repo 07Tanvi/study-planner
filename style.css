@@ -229,3 +229,6 @@ li:hover {
 button {
   border: none;
 }
+li {
+  color: #333;
+}
