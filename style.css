@@ -235,3 +235,6 @@ li {
 input {
   background-color: #fafafa;
 }
+button {
+  font-weight: bold;
+}
