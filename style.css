@@ -248,3 +248,6 @@ body {
   background-color: #ffe6e6;
   border-left: 4px solid red;
 }
+button:hover {
+  opacity: 0.9;
+}
