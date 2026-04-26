@@ -254,3 +254,7 @@ button:hover {
 li {
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
+input:focus {
+  outline: none;
+  border: 1px solid #4CAF50;
+}
