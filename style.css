@@ -267,3 +267,6 @@ li {
 input::placeholder {
   color: #999;
 }
+button {
+  transition: all 0.3s ease;
+}
