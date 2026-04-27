@@ -264,3 +264,6 @@ input:focus {
 li {
   border-bottom: 1px solid #eee;
 }
+input::placeholder {
+  color: #999;
+}
