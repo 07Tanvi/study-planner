@@ -261,3 +261,6 @@ input:focus {
 .completed {
   opacity: 0.6;
 }
+li {
+  border-bottom: 1px solid #eee;
+}
