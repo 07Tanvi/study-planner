@@ -279,3 +279,6 @@ body {
 li {
   cursor: pointer;
 }
+button {
+  font-size: 13px;
+}
