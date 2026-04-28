@@ -282,3 +282,6 @@ li {
 button {
   font-size: 13px;
 }
+input {
+  border-radius: 5px;
+}
