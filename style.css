@@ -288,3 +288,6 @@ input {
 li {
   background-color: #fafafa;
 }
+body {
+  margin: 0;
+}
