@@ -300,3 +300,6 @@ li {
 button {
   min-width: 70px;
 }
+input {
+  outline: none;
+}
