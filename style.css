@@ -297,3 +297,6 @@ ul {
 li {
   padding-left: 10px;
 }
+button {
+  min-width: 70px;
+}
