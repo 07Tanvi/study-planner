@@ -315,3 +315,6 @@ button {
 input {
   width: 95%;
 }
+li {
+  transition: 0.2s;
+}
