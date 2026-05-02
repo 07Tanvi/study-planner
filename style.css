@@ -309,3 +309,6 @@ li:hover {
 li {
   border-radius: 6px;
 }
+button {
+  padding: 5px 8px;
+}
