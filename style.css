@@ -318,3 +318,6 @@ input {
 li {
   transition: 0.2s;
 }
+body {
+  font-size: 15px;
+}
