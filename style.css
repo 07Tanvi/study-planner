@@ -327,3 +327,6 @@ h1 {
 li {
   line-height: 1.4;
 }
+button {
+  margin-right: 5px;
+}
