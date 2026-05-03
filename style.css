@@ -333,3 +333,6 @@ button {
 input {
   font-family: inherit;
 }
+li {
+  overflow: hidden;
+}
