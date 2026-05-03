@@ -330,3 +330,6 @@ li {
 button {
   margin-right: 5px;
 }
+input {
+  font-family: inherit;
+}
