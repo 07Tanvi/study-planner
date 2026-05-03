@@ -336,3 +336,6 @@ input {
 li {
   overflow: hidden;
 }
+body {
+  color: #222;
+}
