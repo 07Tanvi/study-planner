@@ -339,3 +339,6 @@ li {
 body {
   color: #222;
 }
+li {
+  margin-top: 8px;
+}
