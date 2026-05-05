@@ -342,3 +342,6 @@ body {
 li {
   margin-top: 8px;
 }
+button {
+  border-radius: 6px;
+}
