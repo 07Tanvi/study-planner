@@ -345,3 +345,6 @@ li {
 button {
   border-radius: 6px;
 }
+input {
+  background-color: #fdfdfd;
+}
