@@ -348,3 +348,6 @@ button {
 input {
   background-color: #fdfdfd;
 }
+li:hover {
+  transform: translateX(2px);
+}
