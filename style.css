@@ -351,3 +351,6 @@ input {
 li:hover {
   transform: translateX(2px);
 }
+h1 {
+  font-weight: 700;
+}
