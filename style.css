@@ -354,3 +354,6 @@ li:hover {
 h1 {
   font-weight: 700;
 }
+li {
+  word-break: break-word;
+}
