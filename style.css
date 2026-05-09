@@ -366,3 +366,6 @@ button {
 input {
   transition: 0.2s;
 }
+li:hover {
+  border-color: #ddd;
+}
