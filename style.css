@@ -357,3 +357,6 @@ h1 {
 li {
   word-break: break-word;
 }
+li {
+  min-height: 40px;
+}
