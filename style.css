@@ -372,3 +372,6 @@ li:hover {
 body {
   overflow-x: hidden;
 }
+li {
+  text-transform: capitalize;
+}
