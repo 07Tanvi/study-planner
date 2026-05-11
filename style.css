@@ -381,3 +381,6 @@ button {
 input {
   box-sizing: border-box;
 }
+li:hover {
+  transition: 0.2s ease-in-out;
+}
