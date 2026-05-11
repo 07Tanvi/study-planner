@@ -378,3 +378,6 @@ li {
 button {
   letter-spacing: 0.4px;
 }
+input {
+  box-sizing: border-box;
+}
