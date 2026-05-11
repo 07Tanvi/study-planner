@@ -384,3 +384,6 @@ input {
 li:hover {
   transition: 0.2s ease-in-out;
 }
+body {
+  min-height: 100vh;
+}
