@@ -375,3 +375,6 @@ body {
 li {
   text-transform: capitalize;
 }
+button {
+  letter-spacing: 0.4px;
+}
