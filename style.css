@@ -402,3 +402,6 @@ input {
 li:hover {
   opacity: 0.95;
 }
+body {
+  text-rendering: optimizeLegibility;
+}
