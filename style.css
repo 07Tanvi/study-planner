@@ -408,3 +408,6 @@ body {
 button {
   white-space: nowrap;
 }
+ul {
+  padding-bottom: 10px;
+}
