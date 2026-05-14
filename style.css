@@ -393,3 +393,6 @@ h1 {
 li {
   background-clip: padding-box;
 }
+button {
+  user-select: none;
+}
