@@ -405,3 +405,6 @@ li:hover {
 body {
   text-rendering: optimizeLegibility;
 }
+button {
+  white-space: nowrap;
+}
