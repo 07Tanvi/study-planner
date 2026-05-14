@@ -387,3 +387,6 @@ li:hover {
 body {
   min-height: 100vh;
 }
+h1 {
+  text-transform: uppercase;
+}
