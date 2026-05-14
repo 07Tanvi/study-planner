@@ -390,3 +390,6 @@ body {
 h1 {
   text-transform: uppercase;
 }
+li {
+  background-clip: padding-box;
+}
