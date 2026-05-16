@@ -417,3 +417,6 @@ li {
 button {
   outline: none;
 }
+input {
+  color: #333;
+}
