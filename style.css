@@ -411,3 +411,6 @@ button {
 ul {
   padding-bottom: 10px;
 }
+li {
+  list-style: none;
+}
