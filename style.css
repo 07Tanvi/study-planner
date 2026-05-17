@@ -426,3 +426,6 @@ li:hover {
 li {
   display: flex;
 }
+button {
+  cursor: pointer;
+}
