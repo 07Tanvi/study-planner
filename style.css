@@ -432,3 +432,6 @@ button {
 li {
   align-items: center;
 }
+button {
+  font-family: inherit;
+}
