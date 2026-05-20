@@ -444,3 +444,6 @@ li:hover {
 body {
   margin-bottom: 20px;
 }
+h1 {
+  line-height: 1.2;
+}
