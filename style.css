@@ -429,3 +429,6 @@ li {
 button {
   cursor: pointer;
 }
+li {
+  align-items: center;
+}
