@@ -435,3 +435,6 @@ li {
 button {
   font-family: inherit;
 }
+input {
+  max-width: 500px;
+}
