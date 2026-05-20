@@ -453,3 +453,6 @@ button {
 input {
   min-height: 35px;
 }
+li:hover {
+  transform: scale(1.01);
+}
