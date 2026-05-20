@@ -456,3 +456,6 @@ input {
 li:hover {
   transform: scale(1.01);
 }
+body {
+  overflow-y: auto;
+}
