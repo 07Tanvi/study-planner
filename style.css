@@ -450,3 +450,6 @@ li {
 button {
   min-height: 32px;
 }
+input {
+  min-height: 35px;
+}
