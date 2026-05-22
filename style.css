@@ -462,3 +462,6 @@ body {
 h1 {
   text-align: center;
 }
+li {
+  gap: 10px;
+}
