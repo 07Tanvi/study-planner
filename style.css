@@ -474,3 +474,6 @@ input {
 li:hover {
   cursor: pointer;
 }
+body {
+  background-repeat: no-repeat;
+}
