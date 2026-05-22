@@ -477,3 +477,6 @@ li:hover {
 body {
   background-repeat: no-repeat;
 }
+h1 {
+  padding-bottom: 8px;
+}
