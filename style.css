@@ -465,3 +465,6 @@ h1 {
 li {
   gap: 10px;
 }
+button {
+  border-radius: 8px;
+}
