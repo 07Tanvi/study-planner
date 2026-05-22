@@ -471,3 +471,6 @@ button {
 input {
   text-align: left;
 }
+li:hover {
+  cursor: pointer;
+}
