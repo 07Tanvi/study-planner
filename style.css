@@ -468,3 +468,6 @@ li {
 button {
   border-radius: 8px;
 }
+input {
+  text-align: left;
+}
