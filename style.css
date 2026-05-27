@@ -487,3 +487,6 @@ button {
   padding-left: 10px;
   padding-right: 10px;
 }
+input {
+  transition: all 0.2s ease;
+}
