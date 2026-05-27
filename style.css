@@ -480,3 +480,6 @@ body {
 h1 {
   padding-bottom: 8px;
 }
+li {
+  flex-wrap: wrap;
+}
