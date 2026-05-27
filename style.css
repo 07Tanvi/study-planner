@@ -483,3 +483,7 @@ h1 {
 li {
   flex-wrap: wrap;
 }
+button {
+  padding-left: 10px;
+  padding-right: 10px;
+}
