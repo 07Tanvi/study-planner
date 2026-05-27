@@ -496,3 +496,6 @@ li:hover {
 body {
   box-sizing: border-box;
 }
+h1 {
+  user-select: none;
+}
