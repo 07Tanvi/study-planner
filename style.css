@@ -508,3 +508,6 @@ button {
 input {
   border-color: #ccc;
 }
+li:hover {
+  transition: transform 0.2s ease;
+}
