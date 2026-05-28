@@ -505,3 +505,6 @@ li {
 button {
   text-transform: capitalize;
 }
+input {
+  border-color: #ccc;
+}
