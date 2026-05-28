@@ -502,3 +502,6 @@ h1 {
 li {
   padding-top: 8px;
 }
+button {
+  text-transform: capitalize;
+}
