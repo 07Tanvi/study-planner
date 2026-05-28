@@ -499,3 +499,6 @@ body {
 h1 {
   user-select: none;
 }
+li {
+  padding-top: 8px;
+}
