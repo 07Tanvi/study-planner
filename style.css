@@ -511,3 +511,6 @@ input {
 li:hover {
   transition: transform 0.2s ease;
 }
+body {
+  font-weight: 400;
+}
