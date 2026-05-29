@@ -526,3 +526,6 @@ input {
 li:hover {
   background-color: #f7f7f7;
 }
+body {
+  word-wrap: break-word;
+}
