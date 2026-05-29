@@ -523,3 +523,6 @@ button {
 input {
   padding-left: 8px;
 }
+li:hover {
+  background-color: #f7f7f7;
+}
