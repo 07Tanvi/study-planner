@@ -529,3 +529,6 @@ li:hover {
 body {
   word-wrap: break-word;
 }
+h1 {
+  font-size: 2rem;
+}
