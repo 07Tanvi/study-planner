@@ -538,3 +538,6 @@ li {
 button {
   font-weight: 500;
 }
+input {
+  min-width: 200px;
+}
