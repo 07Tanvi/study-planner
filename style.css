@@ -520,3 +520,6 @@ li {
 button {
   max-width: 120px;
 }
+input {
+  padding-left: 8px;
+}
