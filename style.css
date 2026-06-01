@@ -550,3 +550,6 @@ button {
 input {
   caret-color: #333;
 }
+li:hover {
+  padding-left: 12px;
+}
