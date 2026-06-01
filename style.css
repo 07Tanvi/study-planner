@@ -544,3 +544,6 @@ input {
 li {
   border-left: 3px solid #ddd;
 }
+button {
+  text-align: center;
+}
