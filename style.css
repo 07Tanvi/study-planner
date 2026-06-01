@@ -541,3 +541,6 @@ button {
 input {
   min-width: 200px;
 }
+li {
+  border-left: 3px solid #ddd;
+}
