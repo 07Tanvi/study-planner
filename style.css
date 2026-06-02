@@ -559,3 +559,6 @@ li {
 button {
   max-height: 40px;
 }
+li {
+  border-right: 2px solid #f0f0f0;
+}
