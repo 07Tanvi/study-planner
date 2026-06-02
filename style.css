@@ -568,3 +568,6 @@ button {
 input {
   text-indent: 4px;
 }
+h1 {
+  font-style: normal;
+}
