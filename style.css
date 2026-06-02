@@ -571,3 +571,6 @@ input {
 h1 {
   font-style: normal;
 }
+ul {
+  margin-bottom: 15px;
+}
