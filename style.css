@@ -583,3 +583,6 @@ button {
 input {
   border-radius: 4px;
 }
+li {
+  border-left: 4px solid #e0e0e0;
+}
