@@ -595,3 +595,6 @@ input {
 li:hover {
   transform: translateX(3px);
 }
+body {
+  padding-top: 15px;
+}
