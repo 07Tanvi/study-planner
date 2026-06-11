@@ -592,3 +592,6 @@ button {
 input {
   font-size: 15px;
 }
+li:hover {
+  transform: translateX(3px);
+}
