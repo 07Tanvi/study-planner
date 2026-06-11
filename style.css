@@ -601,3 +601,6 @@ body {
 h1 {
   font-weight: 600;
 }
+ul {
+  margin-top: 15px;
+}
