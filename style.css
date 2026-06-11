@@ -586,3 +586,6 @@ input {
 li {
   border-left: 4px solid #e0e0e0;
 }
+button {
+  min-width: 90px;
+}
