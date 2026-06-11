@@ -598,3 +598,6 @@ li:hover {
 body {
   padding-top: 15px;
 }
+h1 {
+  font-weight: 600;
+}
