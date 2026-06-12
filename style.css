@@ -635,3 +635,6 @@ li:hover {
 h1 {
   text-rendering: optimizeLegibility;
 }
+ul {
+  padding-top: 5px;
+}
