@@ -626,3 +626,6 @@ li {
 button {
   line-height: 1.2;
 }
+input {
+  border-style: solid;
+}
