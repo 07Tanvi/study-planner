@@ -607,3 +607,7 @@ ul {
 li {
   border-top: 1px solid #f1f1f1;
 }
+button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
