@@ -614,3 +614,6 @@ button {
 input {
   background-clip: padding-box;
 }
+li:hover {
+  border-radius: 10px;
+}
