@@ -619,4 +619,7 @@ li:hover {
 }
 body {
   scroll-padding-top: 20px;
+} 
+li {
+  border-left-width: 5px;
 }
