@@ -604,3 +604,6 @@ h1 {
 ul {
   margin-top: 15px;
 }
+li {
+  border-top: 1px solid #f1f1f1;
+}
