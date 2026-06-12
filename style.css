@@ -611,3 +611,6 @@ button {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+input {
+  background-clip: padding-box;
+}
