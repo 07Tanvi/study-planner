@@ -617,3 +617,6 @@ input {
 li:hover {
   border-radius: 10px;
 }
+body {
+  scroll-padding-top: 20px;
+}
