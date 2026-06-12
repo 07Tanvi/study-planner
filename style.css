@@ -623,3 +623,6 @@ body {
 li {
   border-left-width: 5px;
 }
+button {
+  line-height: 1.2;
+}
