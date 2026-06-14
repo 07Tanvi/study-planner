@@ -647,3 +647,6 @@ button {
 input {
   padding-right: 8px;
 }
+li:hover {
+  transition: box-shadow 0.2s ease;
+}
