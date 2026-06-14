@@ -638,3 +638,6 @@ h1 {
 ul {
   padding-top: 5px;
 }
+li {
+  border-right: 1px solid #eeeeee;
+}
