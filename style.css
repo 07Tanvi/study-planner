@@ -644,3 +644,6 @@ li {
 button {
   text-align: center;
 }
+input {
+  padding-right: 8px;
+}
