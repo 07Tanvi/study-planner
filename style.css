@@ -641,3 +641,6 @@ ul {
 li {
   border-right: 1px solid #eeeeee;
 }
+button {
+  text-align: center;
+}
